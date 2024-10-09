@@ -5,17 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktail Options Menu</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center; /* Align items vertically in the center */
+        }
+
+        .checkbox-group button {
+            margin-right: 10px; /* Space between button and first checkbox */
+            padding: 5px 10px; /* Padding for the button */
+        }
+
+        .checkbox-group label {
+            margin-right: 10px; /* Space between checkboxes */
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <h1>Cocktail Options Menu</h1>
-        <button id="resetButton">Reset Filters</button>
     </header>
     
     <section id="ingredientCheckboxes">
         <h2>Select Ingredients</h2>
         <div class="checkbox-group">
+            <button id="resetFiltersButton">Reset Filters</button>
             <label><input type="checkbox" class="ingredient-checkbox" value="Mint"> Mint</label>
             <label><input type="checkbox" class="ingredient-checkbox" value="Lemon"> Lemon</label>
             <label><input type="checkbox" class="ingredient-checkbox" value="Honey"> Honey</label>
@@ -120,7 +136,6 @@
                     <td>Bold, Sweet, Citrusy</td>
                 </tr>
             </tbody>
-            
         </table>
     </section>
 

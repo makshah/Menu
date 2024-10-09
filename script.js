@@ -2,7 +2,7 @@ document.querySelectorAll('.ingredient-checkbox').forEach(checkbox => {
     checkbox.addEventListener('change', filterTable);
 });
 
-document.getElementById('resetButton').addEventListener('click', resetFilters);
+document.getElementById('resetFiltersButton').addEventListener('click', resetFilters);
 
 function filterTable() {
     const selectedIngredients = Array.from(document.querySelectorAll('.ingredient-checkbox:checked')).map(cb => cb.value.toLowerCase());
