@@ -9,7 +9,7 @@ function filterTable() {
     const rows = document.querySelectorAll('#cocktailTable tbody tr');
 
     rows.forEach(row => {
-        const ingredients = row.cells[2].textContent.toLowerCase();
+        const ingredients = row.cells[2].textContent.toLowerCase().split(', ');
         const matches = selectedIngredients.every(ingredient => ingredients.includes(ingredient));
         row.style.display = selectedIngredients.length === 0 || matches ? '' : 'none';
     });

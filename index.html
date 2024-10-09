@@ -8,84 +8,52 @@
 </head>
 <body>
 
-    <h1>Cocktail Options Menu</h1>
+    <header>
+        <h1>Cocktail Options Menu</h1>
+        <button id="resetButton">Reset Filters</button>
+    </header>
     
-    <div id="ingredientCheckboxes">
-        <button id="resetButton">Reset</button>
-        <label><input type="checkbox" class="ingredient-checkbox" value="Mint"> Mint</label>
-        <label><input type="checkbox" class="ingredient-checkbox" value="Lemon"> Lemon</label>
-        <label><input type="checkbox" class="ingredient-checkbox" value="Honey"> Honey</label>
-        <label><input type="checkbox" class="ingredient-checkbox" value="Sugar Syrup"> Sugar Syrup</label>
-        <label><input type="checkbox" class="ingredient-checkbox" value="Triple Sec"> Triple Sec</label>
-        <label><input type="checkbox" class="ingredient-checkbox" value="Orange Bitters"> Orange Bitters</label>
-        <label><input type="checkbox" class="ingredient-checkbox" value="Club Soda"> Club Soda</label>
-        <label><input type="checkbox" class="ingredient-checkbox" value="Water"> Water</label>
-        <label><input type="checkbox" class="ingredient-checkbox" value="Clove"> Clove</label>
-        <label><input type="checkbox" class="ingredient-checkbox" value="Cinnamon"> Cinnamon</label>
-    </div>
+    <section id="ingredientCheckboxes">
+        <h2>Select Ingredients</h2>
+        <div class="checkbox-group">
+            <label><input type="checkbox" class="ingredient-checkbox" value="Mint"> Mint</label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Lemon"> Lemon</label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Honey"> Honey</label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Sugar Syrup"> Sugar Syrup</label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Triple Sec"> Triple Sec</label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Orange Bitters"> Orange Bitters</label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Club Soda"> Club Soda</label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Water"> Water</label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Clove"> Clove</label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Cinnamon"> Cinnamon</label>
+        </div>
+    </section>
 
-    <table id="cocktailTable">
-        <thead>
-            <tr>
-                <th>Alcohol Type</th>
-                <th>Cocktail Name</th>
-                <th>Ingredients</th>
-                <th>Measurements</th>
-                <th>Flavor Palette</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td data-label="Alcohol Type">Gin</td>
-                <td data-label="Cocktail Name">Minty Citrus Fizz</td>
-                <td data-label="Ingredients">Mermaid Gin, Mint, Lemon, Honey, Club Soda</td>
-                <td data-label="Measurements">2 oz Gin, 1 oz Lemon juice, 1/2 oz Honey, 6 oz Club Soda, Mint leaves</td>
-                <td data-label="Flavor Palette">Refreshing, Citrusy, Sweet</td>
-            </tr>
-            <tr>
-                <td data-label="Alcohol Type">Whiskey</td>
-                <td data-label="Cocktail Name">Spiced Honey Old Fashioned</td>
-                <td data-label="Ingredients">Red Breast 12, Honey, Cinnamon, Orange Bitters</td>
-                <td data-label="Measurements">2 oz Whiskey, 1/2 oz Honey, 1 dash Orange Bitters, Pinch Cinnamon</td>
-                <td data-label="Flavor Palette">Warm, Sweet, Spicy</td>
-            </tr>
-            <tr>
-                <td data-label="Alcohol Type">Whiskey</td>
-                <td data-label="Cocktail Name">Clove Infused Sour</td>
-                <td data-label="Ingredients">Glemorangie 12, Lemon, Sugar Syrup, Clove</td>
-                <td data-label="Measurements">2 oz Whiskey, 1 oz Lemon juice, 1/2 oz Sugar Syrup, 1 Clove (infused)</td>
-                <td data-label="Flavor Palette">Bright, Sweet, Aromatic</td>
-            </tr>
-            <tr>
-                <td data-label="Alcohol Type">Gin</td>
-                <td data-label="Cocktail Name">Herbal Citrus Splash</td>
-                <td data-label="Ingredients">Mermaid Gin, Mint, Lemon, Sugar Syrup, Club Soda</td>
-                <td data-label="Measurements">2 oz Gin, 1 oz Lemon juice, 1/2 oz Sugar Syrup, 4 oz Club Soda, Mint leaves</td>
-                <td data-label="Flavor Palette">Bright, Sweet, Refreshing</td>
-            </tr>
-            <tr>
-                <td data-label="Alcohol Type">Non-Alcoholic</td>
-                <td data-label="Cocktail Name">Citrus Mint Sparkler</td>
-                <td data-label="Ingredients">Lemon, Honey, Mint, Club Soda</td>
-                <td data-label="Measurements">1 oz Lemon juice, 1/2 oz Honey, 6 oz Club Soda, Mint leaves</td>
-                <td data-label="Flavor Palette">Refreshing, Citrusy, Sweet</td>
-            </tr>
-            <tr>
-                <td data-label="Alcohol Type">Non-Alcoholic</td>
-                <td data-label="Cocktail Name">Spiced Lemonade</td>
-                <td data-label="Ingredients">Lemon, Honey, Cinnamon, Water</td>
-                <td data-label="Measurements">1 oz Lemon juice, 1/2 oz Honey, Pinch Cinnamon, 8 oz Water</td>
-                <td data-label="Flavor Palette">Bright, Sweet, Warm</td>
-            </tr>
-            <tr>
-                <td data-label="Alcohol Type">Non-Alcoholic</td>
-                <td data-label="Cocktail Name">Honey Citrus Cooler</td>
-                <td data-label="Ingredients">Lemon, Honey, Club Soda, Clove</td>
-                <td data-label="Measurements">1 oz Lemon juice, 1/2 oz Honey, 6 oz Club Soda, 1 Clove (infused)</td>
-                <td data-label="Flavor Palette">Refreshing, Sweet, Aromatic</td>
-            </tr>
-        </tbody>
-    </table>
+    <section>
+        <h2>Cocktail List</h2>
+        <table id="cocktailTable">
+            <thead>
+                <tr>
+                    <th>Alcohol Type</th>
+                    <th>Cocktail Name</th>
+                    <th>Ingredients</th>
+                    <th>Measurements</th>
+                    <th>Flavor Palette</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample rows -->
+                <tr>
+                    <td>Gin</td>
+                    <td>Minty Citrus Fizz</td>
+                    <td>Mermaid Gin, Mint, Lemon, Honey, Club Soda</td>
+                    <td>2 oz Gin, 1 oz Lemon juice, 1/2 oz Honey, 6 oz Club Soda, Mint leaves</td>
+                    <td>Refreshing, Citrusy, Sweet</td>
+                </tr>
+                <!-- Additional rows here -->
+            </tbody>
+        </table>
+    </section>
 
     <script src="script.js"></script>
 </body>

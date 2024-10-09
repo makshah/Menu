@@ -1,129 +1,50 @@
 body {
-    font-family: 'Times New Roman', serif;
-    margin: 20px;
-    padding: 0;
-    background-color: #F4EBDC; /* Set background color to #F4EBDC */
-    color: #000; /* Set text color to black */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
 }
 
-h1 {
+header {
     text-align: center;
     margin-bottom: 20px;
 }
 
-input {
-    margin: 20px auto;
-    padding: 10px;
-    width: 100%;
-    max-width: 400px;
-    border: 1px solid #000; /* Set input border color to black */
-    border-radius: 5px;
-    display: block;
+h1 {
+    color: #007bff;
 }
 
-#controls {
-    text-align: center; /* Center the button */
-    margin-bottom: 20px; /* Add space below the button */
+h2 {
+    color: #343a40;
 }
 
-#resetButton {
-    padding: 10px 20px; /* Add some padding */
-    font-size: 16px; /* Set font size */
-    background-color: #D3B0A5; /* Background color */
-    color: #000; /* Text color */
-    border: 1px solid black; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Change cursor on hover */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-#resetButton:hover {
-    background-color: #C2A89E; /* Darker shade on hover */
-}
-
-#ingredientCheckboxes {
-    display: flex;              /* Use flexbox for layout */
-    flex-wrap: wrap;           /* Allow wrapping to the next line if needed */
-    justify-content: center;    /* Center the checkboxes */
-    margin-bottom: 20px;       /* Add some space below the checkboxes */
-}
-
-#ingredientCheckboxes label {
-    display: flex;              /* Use flexbox to align items */
-    align-items: center;        /* Center items vertically */
-    margin: 0 10px;            /* Add space between checkboxes */
-    font-size: 16px;           /* Set font size for checkboxes */
-    color: #000;               /* Set text color to black */
-}
-
-#ingredientCheckboxes input[type="checkbox"] {
-    margin-right: 5px;         /* Space between checkbox and label */
-    transform: scale(1.2);     /* Slightly increase checkbox size */
+.checkbox-group label {
+    margin: 5px 15px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    overflow-x: auto; /* Allow horizontal scrolling */
-    background-color: #F4EBDC; /* Ensure table background matches body */
 }
 
 th, td {
-    padding: 12px;
+    border: 1px solid #dee2e6;
+    padding: 10px;
     text-align: left;
-    border: 1px solid #000; /* Set table border color to black */
 }
 
 th {
-    background-color: #D3B0A5; /* Light background for headers */
+    background-color: #007bff;
+    color: white;
 }
 
-tr:hover {
-    background-color: #C2A89E; /* Slightly darker background on hover */
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-    table {
-        display: block; /* Make the table block for scrolling */
-        overflow-x: auto; /* Enable horizontal scrolling */
-        white-space: nowrap; /* Prevent table cells from wrapping */
-    }
-
-    th, td {
-        padding: 10px; /* Adjust padding for smaller screens */
-        font-size: 14px; /* Slightly smaller font size */
-    }
-
-    th {
-        display: none; /* Hide header in mobile view */
-    }
-
-    tr {
-        display: block; /* Make each row a block for mobile layout */
-        margin-bottom: 10px;
-        border: 1px solid #000; /* Set border for mobile view */
-        border-radius: 5px;
-        overflow: hidden;
-    }
-
-    td {
-        display: flex; /* Use flexbox for layout */
-        justify-content: space-between; /* Space between label and value */
-        padding: 8px 10px;
-        border: none; /* Remove border between cells */
-        border-bottom: 1px solid #000; /* Add bottom border for separation */
-    }
-
-    td:last-child {
-        border-bottom: none; /* Remove last border */
-    }
-    
-    /* Style for mobile headers */
-    td:before {
-        content: attr(data-label); /* Use data-label for mobile header */
-        font-weight: bold;
-        margin-right: 10px;
-        color: #000; /* Set label color to black */
-    }
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
