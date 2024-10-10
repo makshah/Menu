@@ -2,7 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: hsl(0deg, 0%, 13.33%);
+    color: white; /* Set the font color to white */
+    font-family: 'Bookman Old Style';
 }
 
 header {
@@ -11,11 +13,17 @@ header {
 }
 
 h1 {
-    color: #007bff;
+    color: hsl(43.88deg, 31.75%, 58.63%);
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Century Gothic';
 }
 
 h2 {
-    color: #343a40;
+    color: hsl(43.88deg, 31.75%, 58.63%);
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Century Gothic';
 }
 
 .checkbox-group {
@@ -27,24 +35,42 @@ h2 {
 
 .checkbox-group label {
     margin: 5px 15px;
+    color: white; /* Set checkbox label color to white */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+
 }
 
 th, td {
-    border: 1px solid #dee2e6;
+    border: 1px solid hsl(43.88deg, 31.75%, 58.63%);
     padding: 10px;
-    text-align: left;
 }
 
 th {
-    background-color: #007bff;
-    color: white;
+    background-color: hsl(43.88deg, 31.75%, 58.63%);
+    color: white; /* Set table header font color to white */
+    text-align: center;
+    font-weight: lighter;
+    font-size: large;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: hsl(0deg 0.78% 22.5%); /* This can be adjusted if you want a different style */
+}
+
+#resetFiltersButton {
+    background-color: hsl(0deg, 0%, 13.33%);
+    border: 2px solid hsl(43.88deg, 31.75%, 58.63%);
+    color: hsl(43.88deg, 31.75%, 58.63%);
+    padding: 10px 15px; /* Adjust padding as needed */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+#resetFiltersButton:hover {
+    background-color: hsl(43.88deg, 31.75%, 58.63%); /* Change background on hover */
+    color: white; /* Change text color on hover */
 }

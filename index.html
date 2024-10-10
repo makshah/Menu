@@ -32,18 +32,18 @@
         <h2>Select Ingredients</h2>
         <div class="checkbox-group">
             <button id="resetFiltersButton">Reset Filters</button>
-            <label><input type="checkbox" class="ingredient-checkbox" value="Scotch"> Scotch </label>
-            <label><input type="checkbox" class="ingredient-checkbox" value="Irish Whiskey"> Irish Whiskey </label>
             <label><input type="checkbox" class="ingredient-checkbox" value="Gin"> Gin </label>
-            <label><input type="checkbox" class="ingredient-checkbox" value="Mint leaves"> Mint leaves </label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Irish Whiskey"> Irish Whiskey </label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Scotch"> Scotch </label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Clove"> Clove </label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Cinnamon"> Cinnamon </label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Club Soda"> Club Soda</label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Honey syrup"> Honey</label>
             <label><input type="checkbox" class="ingredient-checkbox" value="lemon juice"> Lemon</label>
-            <label><input type="checkbox" class="ingredient-checkbox" value="honey syrup"> Honey</label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Mint leaves"> Mint leaves </label>
+            <label><input type="checkbox" class="ingredient-checkbox" value="Orange Bitters"> Orange Bitters</label>
             <label><input type="checkbox" class="ingredient-checkbox" value="Sugar Syrup"> Sugar Syrup</label>
             <label><input type="checkbox" class="ingredient-checkbox" value="Triple Sec"> Triple Sec</label>
-            <label><input type="checkbox" class="ingredient-checkbox" value="Orange Bitters"> Orange Bitters</label>
-            <label><input type="checkbox" class="ingredient-checkbox" value="Club Soda"> Club Soda</label>
-            <label><input type="checkbox" class="ingredient-checkbox" value="Clove"> Clove</label>
-            <label><input type="checkbox" class="ingredient-checkbox" value="Cinnamon"> Cinnamon</label>
         </div>
     </section>
 
@@ -52,8 +52,8 @@
         <table id="cocktailTable">
             <thead>
                 <tr>
-                    <th>Alcohol Type</th>
-                    <th>Cocktail Name</th>
+                    <th>Spirit</th>
+                    <th>Name</th>
                     <th>Ingredients</th>
                     <th>Measurements</th>
                     <th>Flavor Palette</th>
@@ -61,32 +61,11 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Irish Whiskey</td>
-                    <td>Minted Irish Fizz</td>
-                    <td>Irish Whiskey, lemon juice, honey syrup, mint leaves, club soda</td>
-                    <td>2 oz Irish Whiskey, 1 oz lemon juice, 1 oz honey syrup, mint leaves to taste, club soda to top</td>
-                    <td>Refreshing, Minty</td>
-                </tr>
-                <tr>
                     <td>Scotch</td>
                     <td>Scotch Sour with a Twist</td>
                     <td>Scotch, lemon juice, sugar syrup, cinnamon</td>
                     <td>2 oz Scotch, 3/4 oz lemon juice, 1/2 oz sugar syrup, pinch of cinnamon</td>
                     <td>Tart, Spiced</td>
-                </tr>
-                <tr>
-                    <td>Gin</td>
-                    <td>Citrus Gin Cooler</td>
-                    <td>Gin, Triple Sec, lemon juice, club soda, mint leaves</td>
-                    <td>2 oz Gin, 1 oz Triple Sec, 1 oz lemon juice, club soda to top, mint leaves to garnish</td>
-                    <td>Citrusy, Refreshing</td>
-                </tr>
-                <tr>
-                    <td>Irish Whiskey</td>
-                    <td>Honey Clove Whiskey Highball</td>
-                    <td>Irish Whiskey, honey syrup, clove, club soda</td>
-                    <td>2 oz Irish Whiskey, 1/2 oz honey syrup, 1/4 tsp ground clove, club soda to top</td>
-                    <td>Sweet, Spiced</td>
                 </tr>
                 <tr>
                     <td>Scotch</td>
@@ -97,17 +76,24 @@
                 </tr>
                 <tr>
                     <td>Irish Whiskey</td>
+                    <td>Minted Irish Fizz</td>
+                    <td>Irish Whiskey, lemon juice, honey syrup, mint leaves, club soda</td>
+                    <td>2 oz Irish Whiskey, 1 oz lemon juice, 1 oz honey syrup, mint leaves to taste, club soda to top</td>
+                    <td>Refreshing, Minty</td>
+                </tr>
+                <tr>
+                    <td>Irish Whiskey</td>
+                    <td>Honey Clove Whiskey Highball</td>
+                    <td>Irish Whiskey, honey syrup, clove, club soda</td>
+                    <td>2 oz Irish Whiskey, 1/2 oz honey syrup, 1/4 tsp ground clove, club soda to top</td>
+                    <td>Sweet, Spiced</td>
+                </tr>
+                <tr>
+                    <td>Irish Whiskey</td>
                     <td>Minty Whiskey Lemonade</td>
                     <td>Irish Whiskey, lemon juice, honey syrup, mint leaves, club soda</td>
                     <td>2 oz Irish Whiskey, 1 oz lemon juice, 1 oz honey syrup, mint leaves to taste, club soda to top</td>
                     <td>Refreshing, Citrusy</td>
-                </tr>
-                <tr>
-                    <td>Gin</td>
-                    <td>Cinnamon Gin Fizz</td>
-                    <td>Gin, lemon juice, sugar syrup, cinnamon, club soda</td>
-                    <td>2 oz Gin, 3/4 oz lemon juice, 1/2 oz sugar syrup, pinch of cinnamon, club soda to top</td>
-                    <td>Spiced, Refreshing</td>
                 </tr>
                 <tr>
                     <td>Irish Whiskey</td>
@@ -125,12 +111,26 @@
                 </tr>
                 <tr>
                     <td>Gin</td>
+                    <td>Citrus Gin Cooler</td>
+                    <td>Gin, Triple Sec, lemon juice, club soda, mint leaves</td>
+                    <td>2 oz Gin, 1 oz Triple Sec, 1 oz lemon juice, club soda to top, mint leaves to garnish</td>
+                    <td>Citrusy, Refreshing</td>
+                </tr>
+                <tr>
+                    <td>Gin</td>
+                    <td>Cinnamon Gin Fizz</td>
+                    <td>Gin, lemon juice, sugar syrup, cinnamon, club soda</td>
+                    <td>2 oz Gin, 3/4 oz lemon juice, 1/2 oz sugar syrup, pinch of cinnamon, club soda to top</td>
+                    <td>Spiced, Refreshing</td>
+                </tr>
+                <tr>
+                    <td>Gin</td>
                     <td>Spiced Orange Gin Spritz</td>
                     <td>Gin, Triple Sec, lemon juice, orange bitters, club soda</td>
                     <td>2 oz Gin, 1 oz Triple Sec, 1/2 oz lemon juice, 2 dashes orange bitters, club soda to top</td>
                     <td>Citrusy, Spiced</td>
                 </tr>
-            </tbody>
+            </tbody>            
         </table>
     </section>
 
